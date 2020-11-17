@@ -1,0 +1,30 @@
+create database docsaude;
+use docsaude;
+
+CREATE TABLE pacientes (
+rgpac VARCHAR(30) NOT NULL PRIMARY KEY,
+nomepac VARCHAR(30) NOT NULL,
+senhapac VARCHAR(30) NOT NULL,
+emailpac VARCHAR(50)
+);
+CREATE TABLE Medicos (
+crmmed VARCHAR(30) NOT NULL PRIMARY KEY,
+nomemed VARCHAR(30) NOT NULL,
+senhamed VARCHAR(30) NOT NULL,
+emailmed VARCHAR(50)
+);
+CREATE TABLE lab (
+idlab INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+nomelab VARCHAR(30) NOT NULL,
+senhalab VARCHAR(30) NOT NULL,
+emaillab VARCHAR(50)
+);
+
+CREATE TABLE docs (
+iddoc INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+obsdoc VARCHAR(100) ,
+localdoc VARCHAR(100),
+idlab INT(6),
+crmmed VARCHAR(30),
+rgpac VARCHAR(30)
+);
