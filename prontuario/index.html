@@ -51,7 +51,7 @@
                     </a>
                 </li>
                 <li>
-                   <a href="/exame.html">
+                   <a href="#">
                     <i class="fas fa-notes-medical"></i>
                     Exames
                     </a>
@@ -65,7 +65,7 @@
                 <li>
                     <a href="#">
                     <i class="fas fa-question"></i>
-                    Ajuda
+                    FAQ
                     </a>
                 </li>
             </ul>
@@ -97,28 +97,25 @@
 
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="nav navbar-nav ml-auto">
-                                                        </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Home</a>
-                            </li>
                             <li class="nav-item active">
-                                <a class="nav-link" href="/consultas.html">Consultas</a>
+                                <a class="nav-link" href="#">Page</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/exame.html">Exames</a>
-
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Sobre</a>
+                                <a class="nav-link" href="#">Page</a>
                             </li>
-
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Ajuda</a>
+                                <a class="nav-link" href="#">Page</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Page</a>
                             </li>
                         </ul>
                     </div>
                 </div>
             </nav>
-
+            
+            {% block content %}
+            {% endblock %}
             
         </div>
     </div>
