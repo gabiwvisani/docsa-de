@@ -1,0 +1,25 @@
+<app-loading @fadeState *ngIf="loadingService.isLoading"></app-loading>
+
+<mat-toolbar class="navbar" color="primary">
+  <button @fadeState (click)="location.back()" *ngIf="!isHomeRouteActivated()" mat-icon-button matTooltip="Voltar">
+    <mat-icon>arrow_back</mat-icon>
+  </button>
+  <button mat-icon-button [matMenuTriggerFor]="menu" matTooltip="Menu">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item [routerLink]="['/home']"><mat-icon>supervisor_account</mat-icon>Página Inicial</button>
+    <button mat-menu-item [routerLink]="['/admin/dashboard']"><mat-icon>supervisor_account</mat-icon>Consultas</button>
+    <button [routerLink]="['/admin']" mat-menu-item><mat-icon>supervisor_account</mat-icon>Exames</button>
+    <button [routerLink]="['/admin']" mat-menu-item><mat-icon>supervisor_account</mat-icon>Sobre</button>
+    <button [routerLink]="['/admin']" mat-menu-item><mat-icon>supervisor_account</mat-icon>FAQ</button>
+  </mat-menu>
+  <div class="title">Prontuário Único</div>
+  <div class="navbar-profile">
+    <button [matMenuTriggerFor]="profile" mat-flat-button color="accent" matTooltip="Acessar perfil" class="user" align="end">Olá, pessoa ! <mat-icon>how_to_reg</mat-icon></button>
+    <mat-menu #profile="matMenu">
+      <button (click)="openPerfil()" mat-menu-item><mat-icon>person</mat-icon> Ver meu perfil </button>
+      <button mat-menu-item><mat-icon>login</mat-icon> Encerrar Sessão </button>
+    </mat-menu>
+  </div>
+</mat-toolbar>

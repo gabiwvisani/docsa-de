@@ -1,0 +1,21 @@
+<div mat-dialog-title>
+  Um erro inesperado ocorreu!
+  <mat-icon class="title">error</mat-icon>
+</div>
+<div mat-dialog-content>
+  <div>  {{ data?.name }}</div>
+  <div>  {{ data?.status }}</div>
+  <div>  {{ data?.message }}</div>
+</div>
+<div mat-dialog-actions align="end">
+  <button mat-raised-button color="primary" mat-dialog-close
+    (click)="refresh();">
+    Recarregar página
+    <mat-icon>refresh</mat-icon>
+  </button>
+
+  <button mat-flat-button color="accent" mat-dialog-close (click)="close()">
+    Fechar
+    <mat-icon>close</mat-icon>
+  </button>
+</div>
