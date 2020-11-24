@@ -1,0 +1,42 @@
+<div mat-dialog-content>
+  <div mat-dialog-title>Perfil de usuário</div>
+  <div class="grid">
+    <div class="grid-text">
+      <div class="grid-text-title">
+        Nome:
+      </div>
+      <div class="grid-text-value">
+        {{ 'Diego' || "Não preenchido"}}
+      </div>
+    </div>
+    <div class="grid-text">
+      <div class="grid-text-title">
+        Email:
+      </div>
+      <div class="grid-text-value">
+
+        {{ 'diego@email.com' || "Não preenchido"}}
+      </div>
+    </div>
+    <div class="grid-text">
+      <div class="grid-text-title">
+        Empresa:
+      </div>
+      <div class="grid-text-value">
+
+        {{ 'IBM' || "Não preenchido"}}
+      </div>
+    </div>
+    <div class="grid-text">
+      <div class="grid-text-title">
+        Perfil de usuário:
+      </div>
+      <div class="grid-text-value">
+        {{ 'Paciente' || "Não preenchido"}}
+      </div>
+    </div>
+    <div class="grid-text"></div>
+</div>
+<div mat-dialog-actions align="end">
+  <button mat-raised-button color="primary" [mat-dialog-close] cdkFocusInitial>Fechar</button>
+</div>

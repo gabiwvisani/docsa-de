@@ -1,0 +1,72 @@
+:host {
+  width: 100%;
+}
+
+form {
+  display: flex;
+  position: relative;
+
+  width: 100%;
+  justify-content: center;
+}
+
+.header {
+  height: 40px;
+  padding: 16px;
+}
+
+.full-width {
+  width: 324px;
+}
+
+.shipping-card {
+  min-width: 300px;
+  max-width: 450px;
+  min-height: 450px;
+  margin: auto;
+}
+
+.mat-radio-button {
+  display: block;
+  margin: 5px 0;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.col {
+  flex: 1;
+  margin-right: 20px;
+  justify-content: center;
+  display: flex;
+}
+
+.col:last-child {
+  margin-right: 0;
+}
+
+.image {
+  width: 90%;
+  margin: 16px auto;
+  text-align: center;
+}
+
+.loading {
+  width: 80%;
+  margin: auto;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 150px;
+  align-items: center;
+
+  .button {
+    width: 150px;
+    margin: 4px;
+  }
+}

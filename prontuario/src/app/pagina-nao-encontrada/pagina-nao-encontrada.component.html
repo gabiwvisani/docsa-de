@@ -1,0 +1,17 @@
+<app-navbar></app-navbar>
+
+<mat-card @fadeState class="not-found-card">
+  <mat-card-header>
+    <div mat-card-avatar>  <mat-icon class="avatar">error</mat-icon></div>
+    <mat-card-title>Página não encontrada!</mat-card-title>
+  </mat-card-header>
+  <img class="card-image" mat-card-image src="../assets/404.png">
+  <mat-card-content>
+    <p>
+      Por favor verifique o destino digitado ou contate o suporte.
+    </p>
+  </mat-card-content>
+  <mat-card-actions align="end">
+    <button mat-raised-button color="primary" [routerLink]="['/home']">Ir para página inicial<mat-icon>home</mat-icon></button>
+  </mat-card-actions>
+</mat-card>

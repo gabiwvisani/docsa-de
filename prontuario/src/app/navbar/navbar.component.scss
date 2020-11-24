@@ -1,0 +1,21 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99999;
+  &-profile{
+    display: flex;
+    flex: auto;
+    padding-left: 8px;
+  }
+}
+
+.title {
+  padding: 8px;
+  margin-left: 8px;
+  overflow: none;
+}
+
+.user {
+  margin-left: auto;
+}
